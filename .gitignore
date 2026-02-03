@@ -1,0 +1,8 @@
+# directories
+__pycache__
+_archive_*
+prompts
+tmp
+
+# files
+notes.md
