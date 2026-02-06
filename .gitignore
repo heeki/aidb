@@ -1,6 +1,7 @@
 # directories
 __pycache__
-_archive_*
+_archive
+node_modules
 prompts
 tmp
 
