@@ -23,6 +23,7 @@
 ### Python
 - Use Type Hints for all function signatures.
 - Prefer `unittest` for testing within agent subdirectories.
+- Prefer SQLAlchemy when interacting with relational databases, instead of writing direct SQL statements.
 - Follow PEP 8 style guidelines.
 
 ### TypeScript
