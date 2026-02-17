@@ -41,6 +41,15 @@
 ### Frontends
 - Use Typescript and shadcn for frontend user experience.
 
+## Security Scans
+- Before committing code, verify that no credentials, tokens, or secrets are stored in files tracked by git.
+- Sensitive data should only exist in:
+  - `.env` files (ensure these are in `.gitignore`)
+  - `etc/environment.sh` (if used for local development only and gitignored)
+  - AWS Secrets Manager or Parameter Store for production
+- Use tools like `git-secrets` to scan for accidentally committed secrets.
+- Review diffs before pushing to ensure no API keys, passwords, or tokens are included.
+
 ## Deployment Workflow
 1. Update parameters in `etc/environment.sh`.
 2. Execute via `make <target>`.
