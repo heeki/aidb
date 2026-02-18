@@ -7,3 +7,4 @@ tmp
 
 # files
 notes.md
+*.db*
